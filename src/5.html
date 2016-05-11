@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function changeImage(){
+        element=document.getElementById('myimage')
+        if(element.src.match("bulbon")){
+            element.src="src/bulboff.jpg";
+        }
+        else{
+            element.src="src/bulbon.jpg";
+        }
+    }
+</script>
+<img  id="myimage" onclick="changeImage()" src="src/bulboff.jpg">
+<p>点击图图片变化</p>
+</body>
+</html>
